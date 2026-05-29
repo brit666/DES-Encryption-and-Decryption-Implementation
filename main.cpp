@@ -6,7 +6,7 @@ uint64_t* des_encrypt(const unsigned char* plaintext, const unsigned char* key);
 
 int main() {
     const unsigned char* plaintext = (const unsigned char*)"Hello World!";
-    const unsigned char* my_key = (const unsigned char*)"SECRET";
+    const unsigned char* my_key = (const unsigned char*)"MYSECRET";
 
     size_t len = strlen((const char*)plaintext);
     size_t pad = 8 - (len % 8);
